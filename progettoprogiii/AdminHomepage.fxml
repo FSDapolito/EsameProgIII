@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progettoprogiii.AdminHomepage">
+   <children>
+      <ImageView fx:id="AddButton" fitHeight="37.0" fitWidth="32.0" layoutX="126.0" layoutY="81.0" onMouseClicked="#AddNewProduct" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ProductViewButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="47.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Back_Arrow.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="201.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserisci ricambio">
+         <font>
+            <Font name="Avenir Next Regular" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="50.0" fitWidth="47.0" layoutX="126.0" layoutY="146.0" onMouseClicked="#ShowStockProduct" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@track.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="201.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prodotti in scorta">
+         <font>
+            <Font name="Avenir Next Regular" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="54.0" fitWidth="55.0" layoutX="121.0" layoutY="236.0" onMouseClicked="#PercentualiVendite" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SellPercentage.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="201.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percentuali vendite" textAlignment="CENTER">
+         <font>
+            <Font name="Avenir Next Regular" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

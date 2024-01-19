@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progettoprogiii.NewProduct">
+   <children>
+      <ImageView fitHeight="61.0" fitWidth="48.0" layoutX="276.0" layoutY="338.0" onMouseClicked="#addProductToDatabase" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@new.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+         <effect>
+            <SepiaTone level="0.36" />
+         </effect>
+      </ImageView>
+      <TextField fx:id="codice" layoutX="186.0" layoutY="49.0" prefHeight="37.0" prefWidth="228.0" promptText="codice" />
+      <TextField fx:id="nome" layoutX="186.0" layoutY="86.0" prefHeight="37.0" prefWidth="228.0" promptText="nome" />
+      <TextField fx:id="scorta" layoutX="186.0" layoutY="123.0" prefHeight="37.0" prefWidth="228.0" promptText="quantita'in scorta" />
+      <TextField fx:id="costo" layoutX="186.0" layoutY="160.0" prefHeight="37.0" prefWidth="228.0" promptText="costo" />
+      <TextField fx:id="sconto" layoutX="186.0" layoutY="197.0" prefHeight="37.0" prefWidth="228.0" promptText="sconto" />
+      <TextField fx:id="categoria" layoutX="186.0" layoutY="234.0" prefHeight="37.0" prefWidth="228.0" promptText="categoria" />
+      <TextField fx:id="fornitore" layoutX="186.0" layoutY="271.0" prefHeight="37.0" prefWidth="228.0" promptText="fornitore" />
+      <ImageView fitHeight="37.0" fitWidth="42.0" layoutX="30.0" layoutY="31.0" onMouseClicked="#backPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Back_Arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

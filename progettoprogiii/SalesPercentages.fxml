@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progettoprogiii.SalesPercentages">
+    <stylesheets>
+    </stylesheets>
+    <children>
+        <Button fx:id="LavastoviglieButton" layoutX="460.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#infoLavastoviglie" prefHeight="35.0" prefWidth="118.0" styleClass="button" text="Lavastoviglie" textAlignment="CENTER">
+            <font>
+                <Font name="Avenir Next Regular" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="AspirapolvereButton" layoutX="306.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#infoAspirapolvere" prefHeight="35.0" prefWidth="118.0" styleClass="button" text="Aspirapolvere" textAlignment="CENTER">
+            <font>
+                <Font name="Avenir Next Regular" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="FrigoButton" layoutX="159.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#infoFrigorifero" prefHeight="35.0" prefWidth="118.0" styleClass="button" text="Frigirifero" textAlignment="CENTER">
+            <font>
+                <Font name="Avenir Next Regular" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="LavatriceButton" layoutX="16.0" layoutY="35.0" mnemonicParsing="false" onMouseClicked="#infoLavatrice" prefHeight="35.0" prefWidth="118.0" styleClass="button" text="Lavatrice" textAlignment="CENTER">
+            <font>
+                <Font name="Avenir Next Regular" size="13.0" />
+            </font>
+        </Button>
+        <ImageView fx:id="immagine" fitHeight="206.0" fitWidth="225.0" layoutX="34.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" styleClass="image-view" />
+        <ImageView fx:id="arrow" fitHeight="44.0" fitWidth="51.0" layoutX="16.0" layoutY="342.0" onMouseClicked="#backFile" pickOnBounds="true" preserveRatio="true" styleClass="image-view">
+            <image>
+                <Image url="@Back_Arrow.png" />
+            </image>
+        </ImageView>
+        <BarChart fx:id="barChar" layoutX="280.0" layoutY="98.0" prefHeight="206.0" prefWidth="299.0">
+            <xAxis>
+                <CategoryAxis prefHeight="19.0" prefWidth="255.0" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis prefHeight="0.0" prefWidth="14.0" side="LEFT" />
+            </yAxis>
+        </BarChart>
+    </children>
+</AnchorPane>

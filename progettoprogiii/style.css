@@ -1,0 +1,21 @@
+.root {
+    -fx-background-color: #f4f4f4; /* colore di sfondo */
+}
+
+.button {
+    -fx-background-color: #4285f4; /* colore di sfondo del pulsante */
+    -fx-text-fill: white; /* colore del testo del pulsante */
+}
+
+.button:hover {
+    -fx-background-color: #3b76e3; /* colore di sfondo del pulsante durante l'hover */
+}
+
+.imageView {
+    -fx-border-color: #4285f4; /* colore del bordo dell'immagine */
+    -fx-border-width: 2px; /* larghezza del bordo dell'immagine */
+}
+
+.imageView:hover {
+    -fx-border-color: #3b76e3; /* colore del bordo dell'immagine durante l'hover */
+}

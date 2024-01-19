@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progettoprogiii.Preventivor">
+   <children>
+      <ImageView fx:id="arrow" fitHeight="33.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backFile" pickOnBounds="true" preserveRatio="true" styleClass="image-view">
+         <image>
+            <Image url="@Back_Arrow.png" />
+         </image>
+      </ImageView>
+
+      <VBox layoutX="50.0" layoutY="50.0" spacing="10.0">
+         <HBox spacing="10.0" />
+
+         <HBox spacing="10.0" />
+
+         <HBox spacing="10.0" />
+      </VBox>
+      <ComboBox fx:id="pezzoComboBox" layoutX="227.0" layoutY="223.0" prefHeight="26.0" prefWidth="146.0" promptText="Seleziona pezzo" />
+      <ComboBox fx:id="fornitoreComboBox" layoutX="227.0" layoutY="167.0" prefHeight="26.0" prefWidth="146.0" promptText="Seleziona fornitore" />
+      <Text layoutX="280.0" layoutY="219.0" text="Pezzo:" />
+      <Text layoutX="271.0" layoutY="163.0" text="Fornitore:" />
+
+      <!-- Nuovi elementi aggiunti -->
+      <TextField fx:id="quantitaTextField" layoutX="227.0" layoutY="279.0" prefHeight="26.0" prefWidth="146.0" promptText="Inserisci quantità" />
+      <Button layoutX="322.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#calcolaPreventivo" text="Calcola Preventivo" />
+      <Button layoutX="184.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#aggiungiPezzoAlPreventivo" text="Aggiungi prodotto" />
+   </children>
+</AnchorPane>
